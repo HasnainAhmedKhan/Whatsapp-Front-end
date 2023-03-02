@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "WhatsAppTest",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-whatsapptest-staging-91247-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/074f3d26b589c5674df7523cb6247895aa902a7d"
+}
