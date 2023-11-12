@@ -8,24 +8,18 @@ const InputBox = () => {
 
   const onSend = () => {
     console.warn('Sending a new message: ', newMessage);
-
     setNewMessage('');
   };
 
   return (
     <SafeAreaView edges={['bottom']} style={styles.container}>
-      {/* Icon */}
       <AntDesign name="plus" size={20} color="royalblue" />
-
-      {/* Text Input */}
       <TextInput
         value={newMessage}
         onChangeText={setNewMessage}
         style={styles.input}
         placeholder="type your message..."
       />
-
-      {/* Icon */}
       <MaterialIcons onPress={onSend} style={styles.send} name="send" size={16} color="white" />
     </SafeAreaView>
   );

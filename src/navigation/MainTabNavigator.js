@@ -28,7 +28,8 @@ const MainTabNavigator = () => {
         component={NotImplementedScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="call-outline" size={size} color={color} />
+            <Ionicons name="call-outline" 
+            size={size} color={color} />
           ),
         }}
       />
@@ -37,7 +38,8 @@ const MainTabNavigator = () => {
         component={NotImplementedScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="camera-outline" size={size} color={color} />
+            <Ionicons name="camera-outline" 
+            size={size} color={color} />
           ),
         }}
       />
@@ -46,7 +48,8 @@ const MainTabNavigator = () => {
         component={ChatsScreen}
         options={({ navigation }) => ({
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="ios-chatbubbles-sharp" size={size} color={color} />
+            <Ionicons name="ios-chatbubbles-sharp" 
+            size={size} color={color} />
           ),
           headerRight: () => (
             <Entypo
@@ -64,7 +67,9 @@ const MainTabNavigator = () => {
         component={NotImplementedScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="settings-outline" size={size} color={color} />
+            <Ionicons name="settings-outline" 
+            size={size} 
+            color={color} />
           ),
         }}
       />

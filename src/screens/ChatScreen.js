@@ -3,18 +3,15 @@ import { ImageBackground, StyleSheet, FlatList, KeyboardAvoidingView } from 'rea
 import { useRoute, useNavigation } from '@react-navigation/native';
 import Message from '../components/Message';
 import InputBox from '../components/InputBox';
-
 import bg from '../../assets/images/BG.png';
 import messages from '../../assets/data/messages.json';
 
 const ChatScreen = () => {
   const route = useRoute();
   const navigation = useNavigation();
-
   useEffect(() => {
     navigation.setOptions({ title: route.params.name });
   }, [route.params.name]);
-
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
